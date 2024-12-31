@@ -1,3 +1,5 @@
+# .gitignore
+/devel/
 
 ###> symfony/framework-bundle ###
 /.env.local

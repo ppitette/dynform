@@ -1,0 +1,30 @@
+<div{{ attributes }}>
+    {{ form_start(form) }}
+        {{ form_row(form.type) }}
+        {% if form.firstname is defined %}
+            {{ form_row(form.firstname) }}
+        {% endif %}
+        {% if form.lastname is defined %}
+            {{ form_row(form.lastname) }}
+        {% endif %}
+        {% if form.company_name is defined %}
+            {{ form_row(form.company_name) }}
+        {% endif %}
+        {% if form.siret is defined %}
+            {{ form_row(form.siret) }}
+        {% endif %}
+        {{ form_row(form.address) }}
+        {{ form_row(form.city) }}
+        {{ form_row(form.plan) }}
+        {% if form.payment is defined %}
+            {{ form_row(form.payment) }}
+        {% endif %}
+        {% if form.credit_card is defined %}
+            {{ form_row(form.credit_card) }}
+        {% endif %}
+        {% if form.iban is defined %}
+            {{ form_row(form.iban) }}
+        {% endif %}
+        <button class="btn btn-success">Valider</button>
+    {{ form_end(form) }}
+</div>
